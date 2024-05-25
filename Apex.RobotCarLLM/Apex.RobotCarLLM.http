@@ -1,0 +1,6 @@
+@Apex.RobotCarLLM_HostAddress = http://localhost:5069
+
+GET {{Apex.RobotCarLLM_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

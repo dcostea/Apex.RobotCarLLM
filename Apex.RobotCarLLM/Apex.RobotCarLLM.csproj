@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-Apex.RobotCarLLM-e7873d50-88d9-4adb-bb60-7465ffd5f22d</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591;SKEXP0013;SKEXP0060;SKEXP0061;SKEXP0004;SKEXP0010;SKEXP0001</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.3" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="8.0.3" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Identity.Web" Version="2.18.1" />
+    <PackageReference Include="Microsoft.Identity.Web.DownstreamApi" Version="2.18.1" />
+    <PackageReference Include="Microsoft.Identity.Web.UI" Version="2.18.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.6.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="8.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="Spectre.Console" Version="0.49.1-preview.0.2" />
+    <PackageReference Include="Spectre.Console.ImageSharp" Version="0.49.1-preview.0.2" />
+
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.13.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Plugins.Core" Version="1.13.0-alpha" />
+    <PackageReference Include="Microsoft.SemanticKernel.Abstractions" Version="1.13.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Planners.Handlebars" Version="1.13.0-preview" />
+    <PackageReference Include="Microsoft.SemanticKernel.Planners.OpenAI" Version="1.13.0-preview" />
+    <PackageReference Include="Microsoft.SemanticKernel.Yaml" Version="1.13.0" />
+
+    <PackageReference Include="LLamaSharp.semantic-kernel" Version="0.12.0" />
+    <PackageReference Include="LLamaSharp" Version="0.12.0" />
+    <PackageReference Include="LLamaSharp.Backend.Cuda12" Version="0.12.0" />
+    <!--<PackageReference Include="LLamaSharp.Backend.Cpu" Version="0.10.0" />-->
+    <PackageReference Include="OllamaSharp" Version="1.1.9" />
+  </ItemGroup>
+
+</Project>
